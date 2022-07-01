@@ -1,0 +1,385 @@
+
+
+/* colors: ;
+#157C99 - Dark Blue
+#57DBFF - Medium Blue
+#37C0E6 - Light Blue
+#994E06 - Dark brown
+#E68C37 - Light Brown */
+
+/* Green Tints
+#619E7B - Dark Green
+#385C48 - Very Dark Green
+#86DBAB - Light Green
+#8EE8B5 - Very Light Green
+#76C297 - Medium Solid Green */
+
+
+/* #F7C559 - Yellow
+   #FCB465 - Yelloish Orange
+   #E6B7A1 - Creamy
+   #FCAEA4 - Pinkish Cream
+   #F27299 - Pink */ 
+
+   /* #997A39 - Golden Brown
+   #FFDC91 - Yellowish White
+   #E6C06D - Yellowish Brown
+   #295199 - Navy Blue
+   #6C97E6 - Purple Blue */
+
+   /* #996C02 - Golden Brown (solid)
+   #FFBC21 - Yellowish White (solid)
+   #E6A408 - Yellowish Brown (solid)
+   #002F99 - Navy Blue (solid)
+   #074CE6 - Purple Blue (solid) */
+
+   /* #73997E - Leafy Green
+   #F2FFF6 - White Green
+   #C3E6CD - Lighter White Green
+   #996363 - Brown Darkish light
+   #E6C3C3 - Pinkish Brown */
+
+
+* {
+  font-family: 'Poppins', Verdana, sans-serif, serif;
+  box-sizing: border-box;
+}
+
+#header-title {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#header-title a {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+
+body {
+  background: #F2FFF6;
+  color: black;
+  font-family: 'Poppins', Verdana, sans-serif, serif;
+  text-align: center;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+	height: 25vh;
+}
+
+#header-title {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.2;
+  padding-top: 20px;
+}
+
+#header-title a{
+   font-family: 'Kdam Thmor Pro', sans-serif;
+   text-decoration: none;
+   color: black;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  position: absolute;
+  top: 5em;
+  right: 5%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 7px;
+  border-radius: 3px;
+  background-color: black;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #F2FFF6;
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 100%;
+}
+nav {
+	text-align: center;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #385C48;
+  font-size: 1.7em;
+  display: inline-block;
+  margin-top: 1.25em;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+
+nav a:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: white;
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: white;
+  background-color: black;
+}
+
+nav a:hover:before {
+  height: 100%;
+}
+
+nav ul li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.navbar {
+  display: none;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.portfolio-category {
+   background-color: #385C48;
+   width: 100%;
+   height: 40vh;
+   align-content: center;
+   margin-bottom: 20px;
+   color: #F2FFF6;
+}
+
+/*h3 {
+  margin-top: 70px;
+}*/
+
+.btn {
+	border-radius: 5px;
+	border: none;
+  width: 50%;
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+.btn:hover {
+    background-color:rgba(50, 200, 55, 0.3);
+    cursor: pointer;
+    border: 2px solid #F2FFF6;
+    color: #F2FFF6;
+}
+
+p a {
+    color: #385C48;
+}
+
+p a:hover {
+    color: #385C4880;
+}
+
+
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+}
+
+
+
+/* Tablet & Desktop */
+
+@media only screen and (min-width: 601px) /*and (max-width: 1199px)*/ {
+
+html, body {
+    background-color: #F2FFF6;
+    margin: 0;
+}
+
+#header-title {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  padding-top: 20px;
+}
+
+#header-title a {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+    background-color: #86DBAB;
+    padding: 20px;
+    text-align: center;
+}
+
+#portfolio-title {
+    margin-top: 20px;
+}
+
+
+.navbar {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.nav {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+.navbar li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 50px;
+}
+
+.navbar ul li a:hover {
+  /*background-color: #F2FFF6;*/
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 300px;
+  padding: 5px;
+  margin-right: -14px;
+  background-color:rgba(50, 200, 55, 0.3);
+  color: black;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /*border: 1px solid black;*/
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.portfolio-category {
+   background-color: #385C48;
+   width: 40%;
+   height: 300px;
+   align-content: center;
+   color: #F2FFF6;
+   text-align: center;
+   font-size: 1.7em;
+   margin-bottom: 20px;
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  font-size: 0.6em;
+}
+
+.btn:hover {
+    /*background-color:rgba(56, 92, 72, 0.5);*/
+    background-color:rgba(50, 200, 55, 0.3);
+    cursor: pointer;
+    border: 2px solid #F2FFF6;
+    color: #F2FFF6;
+}
+
+.ui-designs {
+  display: none;
+}
+
+p a {
+    color: #385C48;
+}
+
+p a:hover {
+    color: #385C4880;
+}
+
+p.mobile-top {
+  display: none;
+}
+
+
+}
+
+
+
+
+/* Desktop 
+
+@media only screen and (min-width: 1200px) {
+
+     
+
+} */
