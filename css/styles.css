@@ -1,0 +1,304 @@
+
+
+/* colors: ;
+#157C99 - Dark Blue
+#57DBFF - Medium Blue
+#37C0E6 - Light Blue
+#994E06 - Dark brown
+#E68C37 - Light Brown */
+
+/* Green Tints
+#619E7B - Dark Green
+#385C48 - Very Dark Green
+#86DBAB - Light Green
+#8EE8B5 - Very Light Green
+#76C297 - Medium Solid Green */
+
+
+/* #F7C559 - Yellow
+   #FCB465 - Yelloish Orange
+   #E6B7A1 - Creamy
+   #FCAEA4 - Pinkish Cream
+   #F27299 - Pink */ 
+
+   /* #997A39 - Golden Brown
+   #FFDC91 - Yellowish White
+   #E6C06D - Yellowish Brown
+   #295199 - Navy Blue
+   #6C97E6 - Purple Blue */
+
+   /* #996C02 - Golden Brown (solid)
+   #FFBC21 - Yellowish White (solid)
+   #E6A408 - Yellowish Brown (solid)
+   #002F99 - Navy Blue (solid)
+   #074CE6 - Purple Blue (solid) */
+
+   /* #73997E - Leafy Green
+   #F2FFF6 - White Green
+   #C3E6CD - Lighter White Green
+   #996363 - Brown Darkish light
+   #E6C3C3 - Pinkish Brown */
+
+
+* {
+  font-family: 'Poppins', Verdana, sans-serif, serif;
+  box-sizing: border-box;
+}
+
+#header-title {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+}
+
+#header-title a {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 700px) {
+
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Poppins', Verdana, sans-serif, serif;
+  text-align: center;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#header-title {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+}
+
+#header-title a {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header-item {
+  align-content: center;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.8em;
+}
+
+.navbar {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.navbar li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.navbar ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.portfolio-category {
+   text-align: center;
+   font-size: 1.1em;
+   margin-bottom: 70px;
+}
+
+a.work-link {
+  text-decoration: none;
+  color: black;
+}
+
+a.work-link:hover {
+   text-decoration: underline;
+}
+
+img {
+  width: 100%;
+}
+
+p a {
+    color: #385C48;
+}
+
+p a:hover {
+    color: #385C4880;
+}
+
+p.click-desktop {
+  display: none;
+}
+
+footer {
+   width: 100%; 
+   margin: auto; 
+   background-color: black;
+   color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 100px;
+}
+
+}
+
+
+
+/* Tablet & Desktop */
+
+@media only screen and (min-width: 701px) /*and (max-width: 1199px)*/ {
+
+html, body {
+    background-color: white;
+    margin: 0;
+}
+
+#header-title {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+}
+
+#header-title a {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-item {
+  align-content: center;
+}
+
+
+.navbar {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.nav {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+.navbar li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.navbar ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-category {
+   text-align: center;
+   font-size: 1.1em;
+   margin-bottom: 70px;
+}
+
+a.work-link {
+  text-decoration: none;
+  color: black;
+}
+
+a.work-link:hover {
+   text-decoration: underline;
+}
+
+p a {
+    color: #385C48;
+}
+
+p a:hover {
+    color: #385C4880;
+}
+
+p.mobile-top {
+  display: none;
+}
+
+p.tap-mobile {
+  display: none;
+}
+
+footer {
+   width: 100%; 
+   margin: auto; 
+   background-color: black;
+   color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 192px;
+}
+
+
+}
+
+
+
+
+/* Desktop 
+
+@media only screen and (min-width: 1200px) {
+
+     
+
+} */
